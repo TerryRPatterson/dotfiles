@@ -1,0 +1,16 @@
+#! /usr/bin/env sh
+
+SCRIPT=$(realpath $0);
+SCRIPTPATH=$(dirname $SCRIPT)
+
+function link_to_home {
+    ln $SCRIPTPATH/$1 $HOME/$2 -s;
+}
+
+link_to_home .atom;
+
+link_to_home .bashrc;
+
+link_to_home .lessfilter;
+
+link_to_home quotes Documents;

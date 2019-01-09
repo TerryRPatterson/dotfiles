@@ -1,0 +1,31 @@
+Installed commands:
+   https://github.com/so-fancy/diff-so-fancy-- makes git diff better
+
+   https://github.com/sharkdp/bat -- Better version of cat
+
+   https://github.com/junegunn/fzf | repo avaible-- fuzzy search can be used to
+     search history with `history | fzf`
+
+   https://github.com/rupa/z Z -- cd with a memory
+
+   ncdu -- installed through repo disk usage analyzes
+
+   python3-pygments -- used to syntax highlight the pager
+
+   less -- better pager
+
+   prettyping -- prettier ping display
+
+   the_silver_searcher -- faster grep (command is ag)
+
+   glib2 -- allow trashing of files
+
+   fd-find -- a better find
+
+   exa -- ls with extended attributes
+
+   htop -- Process manager
+
+   https://github.com/pindexis/qfc qfc -- Cool autocomplete
+
+   sshrc -- bring a the config files along during ssh
