@@ -3,3 +3,10 @@ compile-cache
 dev
 .npm
 .node-gyp
+# Vs Code stuff
+jsconfig.json
+.vscode
+
+Code/Cache
+Code/CachedData/
+Code/logs
