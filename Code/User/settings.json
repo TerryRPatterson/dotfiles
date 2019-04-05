@@ -1,4 +1,5 @@
 {
+    "java.home": "/usr/lib/jvm-exports/java-1.8.0-openjdk-1.8.0.151-1.b12.fc25.x86_64",
     "editor.renderWhitespace": "boundary",
     "editor.accessibilitySupport": "off",
     "editor.renderControlCharacters": true,
