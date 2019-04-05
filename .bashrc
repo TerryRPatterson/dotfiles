@@ -1,16 +1,6 @@
 # .bashrc
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    source /etc/bashrc
-fi
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# customazations for interactive sessions
-if [ -t 1 ]
-then
-
-    function check_source {
+function check_source {
         if [ -f $1 ]
         then
             source $1
@@ -18,6 +8,21 @@ then
             echo missing $1
         fi
     }
+
+# Source global definitions
+check_source /etc/bashrc
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/activityReader/dev_tools:$PATH"
+
+# customazations for interactive sessions
+if [ -t 1 ]
+then
+
+    eval $(thefuck --alias)
+    
+
+
 
     check_source $HOME/dtr-code/dev-tools/env/dtr_dev.bash
     # check_source $HOME/.dotfiles/z.sh
@@ -30,6 +35,8 @@ then
 
     eval $(thefuck --alias darn)
 
+    check_source $HOME/.dotfiles/liquidprompt/liquidprompt
+	check_source $HOME/api_keys
 
     #typos
     alias gti='git';
@@ -134,7 +141,7 @@ then
         fortune ~/Documents/quotes | cowsay -f tux;
     }
 
-    if [[ -t 1 ]] && ! [[ -n $ATOM ]]; then
+    if [[ -t 1 ]] && [[ -z $ATOM ]] && [[ -z $VS_CODE ]]; then
         tux_quote
     fi
 

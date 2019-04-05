@@ -1,0 +1,72 @@
+! Lots of systems do not know rxvt-unicode
+!URxvt*termName:rxvt
+
+! We want login shells
+URxvt*loginShell:true
+
+! transparency - true or false (default)
+URxvt*transparent:false
+
+! I do not like the bell ringing
+URxvt*visualBell: true
+
+! tint with any color; i.e., blue, red, tomato4, olivedrab2, etc.
+!   some nice listings are at:
+!     http://www.nisrv.com/modules.php?name=Hex_Colors
+!     http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
+!URxvt*tintColor:blue
+
+! shading - 0 to 99 darkens, 101 to 200 lightens.
+!   Do not use with tintColor; use a darker or lighter color instead.
+!URxvt*shading:40
+
+! Fade the window when we lose focus
+URxvt*fading:10
+URxvt*fadeColor:White
+
+URxvt*geometry:80x45
+
+! scrollback buffer lines - 65535 is max (64 is default)
+URxvt*saveLines:12000
+
+! font color (default is black)
+URxvt*foreground:Green
+
+! background color (prior to tinting) (default is white)
+URxvt*background:Black
+
+! We want a small border around the window
+URxvt*internalBorder:6
+URxvt*borderColor:#202020
+
+! xft fonts - anti-aliased xft font setup is nice, but can be choppy
+URxvt*font: xft:DejaVu Sans Mono-11
+! Meta-ctrl-1 is normal font, meta-ctrl-2 is larger font
+URxvt*keysym.M-C-1: command:\033]50;xft:DejaVu Sans Mono-11\007
+URxvt*keysym.M-C-2: command:\033]50;xft:DejaVu Sans Mono-13\007
+
+! Replace blue directory colors with a lighter shade for clarity. To
+! set colored directories and files within urxvt, xterm, and aterm, add
+! the following line to your ~/.bashrc ($HOME/.bashrc) file under
+! the heading "# User specific aliases and functions":
+!   alias ls="ls -h --color=auto"
+URxvt*color4:#4169e1
+URxvt*color12:#4986e7
+
+! scrollbar - true (default) or false
+URxvt*scrollBar:true
+
+! scrollbar position - left=false (default) or right=true
+URxvt*scrollBar_right:true
+
+! scrollbar style - rxvt (default), plain, next, or xterm
+URxvt*scrollstyle:rxvt
+
+URxvt*perl-ext-common: default,keysym-list,-selection,-selection-popup
+URxvt*cutchars: "\`\"\'&()*,;<>=?@[]^{}|\:"
+
+! We want print screen to go to a file...
+URxvt*print-pipe: cat > $(TMPDIR=$HOME mktemp rxvt.print.XXXXXX)
+
+! Give the F1-F4 codes that DBL expects
+URxvt*keysym.F1: list_\033O_PQRS_
