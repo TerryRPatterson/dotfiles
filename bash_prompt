@@ -1,0 +1,48 @@
+#! /usr/bin/env bash
+
+GREEN="\[\033[32m\]"
+YELLOW="\[\033[33m\]"
+RESET="\[\033[0m\]"
+RED="\[\033[41m\]"
+
+function get_wrk_env {
+    if [[ -n "$WRK_ENV" ]]
+    then
+        echo -n "[$WRK_ENV]"
+    fi
+}
+
+function get_previous {
+    previous=$?
+    if [[ $previous != 0 ]]
+    then
+        echo -en "[$previous]"
+    fi
+}
+
+function truncate_pwd {
+    if [ $HOME == $PWD ]
+    then
+    newPWD="~"
+    elif [ $HOME ==  ${PWD:0:${#HOME}} ]
+    then
+    newPWD="~${PWD:${#HOME}}"
+    else
+    newPWD=$PWD
+    fi
+
+    local pwdmaxlen=30
+    if [ ${#newPWD} -gt $pwdmaxlen ]
+    then
+    local pwdoffset=$(( ${#newPWD} - $pwdmaxlen  ))
+    newPWD="${newPWD:$pwdoffset:$pwdmaxlen}"
+    fi
+    echo $newPWD
+}
+
+function build_prompt {
+
+    PS1="${RED}$(get_previous)$(get_wrk_env)[\w]$(parse_git_branch) $ ${RESET} "
+}
+export PROMPT_COMMAND="build_prompt"
+export PS1=$PS1;

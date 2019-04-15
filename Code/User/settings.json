@@ -39,12 +39,13 @@
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "alt",
     "cSpell.userWords": [
-        "Datatrac",
-        "dtrweb",
-        "iface",
-        "ifaces",
-        "imgs",
-        "structs"
+      "Datatrac",
+      "dtrweb",
+      "iface",
+      "ifaces",
+      "imgs",
+      "nargs",
+      "structs"
     ],
     "workbench.tree.indent": 16,
     "files.associations": {
@@ -53,4 +54,59 @@
     },
     "[json5]": {},
     "diffEditor.ignoreTrimWhitespace": true,
+    "spellright.parserByClass": {
+        "javascript": "plain",
+        "javascriptreact": "plain",
+        "python": "plain",
+    },
+    "better-comments.tags": [
+        {
+          "tag": "!",
+          "color": "#FF2D00",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "?",
+          "color": "#3498DB",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "//",
+          "color": "#0c82d6",
+          "strikethrough": true,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "todo",
+          "color": "#FF8C00",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+          "tag": "*",
+          "color": "#0c82d6",
+          "strikethrough": false,
+          "backgroundColor": "transparent"
+        },
+        {
+            "tag": " eslint",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent",
+        }
+      ],
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [{
+          "scope": "comment",
+          "settings": {
+              "foreground": "#0c82d6"
+          }
+      }]
+      },
+      "editor.fontLigatures": true,
+      "editor.fontFamily": "'DejaVu Sans Code' , 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+      "terminal.integrated.rendererType": "dom",
+
 }

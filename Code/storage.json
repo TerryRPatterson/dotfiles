@@ -1,61 +1,9 @@
 {
-    "telemetry.machineId": "c56e577e6d165ef156832740f98d43509402a515a577cab02075f35660f32cca",
+    "telemetry.machineId": "ecd7a968f8c016c81b4b61a3e8c70d1a652729ac357a00e7d2afdf5fa794a07e",
     "openedPathsList": {
-        "workspaces3": [
-            "file:///home/tpatterson/dtr-code/html5driver",
-            "file:///home/tpatterson/dtr-code/receive_app",
-            "file:///home/tpatterson/dtr-code/gateway",
-            "file:///home/tpatterson/dtr-code/dtrweb",
-            "file:///home/tpatterson",
-            "file:///home/tpatterson/dtr-code/receive_app/icon/android",
-            "file:///home/tpatterson/.dotfiles/.git",
-            "file:///home/tpatterson/dtr-code/lcs",
-            "file:///home/tpatterson/dtr-code/stable-html5driver",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/tests/rest_api/sample_json"
-        ],
+        "workspaces3": [],
         "files2": [
-            "file:///home/tpatterson/.bash",
-            "file:///home/tpatterson/dtr-code/gateway/bo_interface.md",
-            "file:///home/tpatterson/dtr-code/html5driver/jsconfig.json",
-            "file:///home/tpatterson/dtr-code/receive_app/kit_build.log",
-            "file:///home/tpatterson/tempHTML.html",
-            "file:///home/tpatterson/tempHTML",
-            "file:///home/tpatterson/goodData",
-            "file:///home/tpatterson/decodePNG",
-            "file:///home/tpatterson/tempData",
-            "file:///home/tpatterson/dtr-code/dtrweb/requirements.txt",
-            "file:///home/tpatterson/dtr-code/dtrweb/requirements_dev.txt",
-            "file:///home/tpatterson/dtr-code/dtrweb/requirements_bootstrap.txt",
-            "file:///etc/default/grub",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/static/gateway/order/stop_summary_di.html",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/tests/rest_api/sample_json/default_route_header.json",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/tests/rest_api/sample_json/default_route_stop.json",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/model.py",
-            "file:///home/tpatterson/dtr-code/html5driver/components/stopInJob.jsx",
-            "file:///home/tpatterson/dtr-code/html5driver/test/pages/job_summary.test.js",
-            "file:///home/tpatterson/dtr-code/html5driver/pages/job_summary.jsx",
-            "file:///home/tpatterson/dtr-code/html5driver/css/stoplist.css",
-            "file:///home/tpatterson/dtr-code/dfd/driver/src/main/java/com/datatrac/android/driver/ui/OrderTemplates.java",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/subcontrollers/gateway.py",
-            "file:///home/tpatterson/.dotfiles/.gitignore",
-            "file:///home/tpatterson/.secureKeys",
-            "file:///home/tpatterson/.dotfiles/makeSymLinks",
-            "file:///home/tpatterson/dtr-code/html5driver/.gitignore",
-            "file:///home/tpatterson/.gitconfig",
-            "file:///home/tpatterson/.config/Code/logs/20190328T081027/exthost1/vscode.typescript-language-features/tsserver-log-l59XEo/tsserver.log",
-            "file:///home/tpatterson/dtr-code/html5driver/home/tpatterson/.config/Code/logs/20190328T081027/exthost1/vscode.typescript-language-features/tsserver-log-l59XEo/tsserver.log",
-            "file:///home/tpatterson/.config/Code/logs/20190328T075954/exthost1/vscode.typescript-language-features/tsserver-log-OqYBCV/tsserver.log",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/security.py",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/__pycache__/security.cpython-36.pyc",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/templates/standard/cops/dblcrud/fields_routed_orders.mak",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/subcontrollers/tracking.py",
-            "file:///home/tpatterson/dtr-code/dtrweb/oracle/8.19-loginless-user.sql",
-            "file:///home/tpatterson/dtr-code/dtrweb/dev-tools/bin/reload_db",
-            "file:///home/tpatterson/dtr-code/dtrweb/populate_initial_data.py",
-            "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/templates/standard/default/base.mak",
-            "file:///home/tpatterson/temp",
-            "file:///home/tpatterson/dtr-code/gateway/.babelrc",
-            "file:///home/tpatterson/dtr-code/gateway/.eslintrc.yml"
+            "file:///home/tpatterson/.dotfiles/.bashrc"
         ]
     },
     "lastKnownMenubarData": {
@@ -98,228 +46,15 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "fsPath": "/home/tpatterson/dtr-code/html5driver",
-                                        "external": "file:///home/tpatterson/dtr-code/html5driver",
-                                        "path": "/home/tpatterson/dtr-code/html5driver",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/html5driver"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/receive_app",
-                                        "path": "/home/tpatterson/dtr-code/receive_app",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/receive_app"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/gateway",
-                                        "path": "/home/tpatterson/dtr-code/gateway",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/gateway"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/dtrweb",
-                                        "path": "/home/tpatterson/dtr-code/dtrweb",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/dtrweb"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson",
-                                        "path": "/home/tpatterson",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/home/tpatterson"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/receive_app/icon/android",
-                                        "path": "/home/tpatterson/dtr-code/receive_app/icon/android",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/receive_app/icon/android"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/.dotfiles/.git",
-                                        "path": "/home/tpatterson/.dotfiles/.git",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles/.git"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/lcs",
-                                        "path": "/home/tpatterson/dtr-code/lcs",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/lcs"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/stable-html5driver",
-                                        "path": "/home/tpatterson/dtr-code/stable-html5driver",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/stable-html5driver"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/dtrweb/dtrweb/tests/rest_api/sample_json",
-                                        "path": "/home/tpatterson/dtr-code/dtrweb/dtrweb/tests/rest_api/sample_json",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/dtrweb/dtrweb/tests/rest_api/sample_json"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/tpatterson/.bash",
-                                        "path": "/home/tpatterson/.bash",
+                                        "external": "file:///home/tpatterson/.dotfiles/.bashrc",
+                                        "path": "/home/tpatterson/.dotfiles/.bashrc",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.bash"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/gateway/bo_interface.md",
-                                        "path": "/home/tpatterson/dtr-code/gateway/bo_interface.md",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/gateway/bo_interface.md"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/html5driver/jsconfig.json",
-                                        "path": "/home/tpatterson/dtr-code/html5driver/jsconfig.json",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/html5driver/jsconfig.json"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/receive_app/kit_build.log",
-                                        "path": "/home/tpatterson/dtr-code/receive_app/kit_build.log",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/receive_app/kit_build.log"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/tempHTML.html",
-                                        "path": "/home/tpatterson/tempHTML.html",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/tempHTML.html"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/tempHTML",
-                                        "path": "/home/tpatterson/tempHTML",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/tempHTML"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/goodData",
-                                        "path": "/home/tpatterson/goodData",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/goodData"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/decodePNG",
-                                        "path": "/home/tpatterson/decodePNG",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/decodePNG"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/tempData",
-                                        "path": "/home/tpatterson/tempData",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/tempData"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/tpatterson/dtr-code/dtrweb/requirements.txt",
-                                        "path": "/home/tpatterson/dtr-code/dtrweb/requirements.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dtr-code/dtrweb/requirements.txt"
+                                    "label": "~/.dotfiles/.bashrc"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -429,7 +164,8 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Folder",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -805,8 +541,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1247,6 +982,7 @@
             },
             "workbench.action.openSettings": {
                 "label": "Ctrl+,",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+,"
             },
             "workbench.view.extensions": {
@@ -1278,10 +1014,6 @@
                 "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
-                "label": "Ctrl+W",
-                "userSettingsLabel": "ctrl+w"
-            },
-            "workbench.action.quit": {
                 "label": "Ctrl+Q",
                 "userSettingsLabel": "ctrl+q"
             },
@@ -1323,6 +1055,7 @@
             },
             "editor.action.commentLine": {
                 "label": "Ctrl+/",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+/"
             },
             "editor.action.blockComment": {
@@ -1404,10 +1137,12 @@
             },
             "workbench.action.zoomIn": {
                 "label": "Ctrl+=",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+="
             },
             "workbench.action.zoomOut": {
                 "label": "Ctrl+-",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+-"
             },
             "workbench.action.zoomReset": {
@@ -1446,6 +1181,7 @@
             },
             "workbench.action.terminal.toggleTerminal": {
                 "label": "Ctrl+`",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+`"
             },
             "workbench.actions.view.problems": {
@@ -1458,10 +1194,12 @@
             },
             "workbench.action.navigateBack": {
                 "label": "Ctrl+Alt+-",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+alt+-"
             },
             "workbench.action.navigateForward": {
                 "label": "Ctrl+Shift+-",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+-"
             },
             "workbench.action.navigateToLastEditLocation": {
@@ -1547,6 +1285,7 @@
             },
             "editor.action.jumpToBracket": {
                 "label": "Ctrl+Shift+\\",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+\\"
             },
             "editor.action.marker.nextInFiles": {
@@ -1607,10 +1346,12 @@
             },
             "workbench.action.terminal.new": {
                 "label": "Ctrl+Shift+`",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+`"
             },
             "workbench.action.terminal.split": {
                 "label": "Ctrl+\\",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+\\"
             },
             "workbench.action.tasks.build": {
@@ -1629,20 +1370,5 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#282c34",
-    "windowsState": {
-        "lastActiveWindow": {
-            "folder": "file:///home/tpatterson/dtr-code/receive_app",
-            "backupPath": "/home/tpatterson/.config/Code/Backups/c5f5c75614782bbb384aa40268b746bf",
-            "uiState": {
-                "mode": 0,
-                "x": 1600,
-                "y": 64,
-                "width": 1920,
-                "height": 1016
-            }
-        },
-        "openedWindows": []
-    },
-    "pickerWorkingDir": "/home"
+    "themeBackground": "#282c34"
 }

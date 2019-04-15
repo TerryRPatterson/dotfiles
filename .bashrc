@@ -20,84 +20,28 @@ if [ -t 1 ]
 then
 
     eval $(thefuck --alias)
-    
 
 
 
-    check_source $HOME/dtr-code/dev-tools/env/dtr_dev.bash
+
     # check_source $HOME/.dotfiles/z.sh
     check_source $HOME/.dotfiles/sensible.bash
     check_source $HOME/.dotfiles/.gitPrompt
-    # check_source $HOME/.dotfiles/liquidprompt/liquidprompt
     check_source $HOME/.qfc/bin/qfc.sh
-    check_source $HOME/.fzf.bash
-    check_source $HOME/.secureKeys
+    check_source /usr/share/fzf/shell/key-bindings.bash
+    check_source $HOME/.dotfiles/secureKeys
+    
 
     eval $(thefuck --alias darn)
 
-    check_source $HOME/.dotfiles/liquidprompt/liquidprompt
-	check_source $HOME/api_keys
+    check_source $HOME/.dotfiles/bash_prompt
 
     #typos
     alias gti='git';
     alias sl='ls';
     alias wkr='wrk';
+
     # User specific aliases and functions
-    # function parse_git_branch {
-    #      git branch --no-color 2> /dev/null | sed -e \
-    #      '/^[^*]/d' -e 's/* \(.*\)/(\1)/';
-    # }
-    function get_wrk_env {
-        if [[ -n "$WRK_ENV" ]]
-        then
-            echo -n "[$WRK_ENV]"
-        fi
-    }
-
-    function get_previous {
-        previous=$?
-        if [[ -n "$WRK_ENV" ]]
-        then
-            current=$WRK_ENV
-        else
-            current=$(truncate_pwd)
-        fi
-        echo -ne "\033]0; ${current} \007"
-        if [[ $previous != 0 ]]
-        then
-            echo -en "\e[0;41m[$previous]\e[0m"
-        fi
-    }
-
-    function truncate_pwd {
-     if [ $HOME == $PWD ]
-     then
-       newPWD="~"
-     elif [ $HOME ==  ${PWD:0:${#HOME}} ]
-     then
-       newPWD="~${PWD:${#HOME}}"
-     else
-       newPWD=$PWD
-     fi
-
-      local pwdmaxlen=30
-      if [ ${#newPWD} -gt $pwdmaxlen ]
-      then
-        local pwdoffset=$(( ${#newPWD} - $pwdmaxlen  ))
-        newPWD="${newPWD:$pwdoffset:$pwdmaxlen}"
-      fi
-      echo $newPWD
-    }
-
-    function build_prompt {
-        get_wrk_env;
-        echo -en \W
-        parse_git_branch;
-    }
-    PROMPT_COMMAND="get_previous"
-    PS1="\[\e[0;41m\]\$(get_wrk_env)\$(parse_git_branch)\\$\[\e[0m\] "
-    export LP_PS1_PREFIX="${get_wrk_env}"
-    export PS1=$PS1;
 
     alias py='python3';
 
@@ -119,9 +63,7 @@ then
         pipenv uninstall "$@";
     }
 
-    export LESSOPEN='|~/.lessfilter %s'
-
-    export dirtrim=3;
+    export PROMPT_DIRTIRM=3;
 
     export SYSTEMD_PAGER=less
     export PAGER=less
@@ -130,7 +72,7 @@ then
 
     export ELECTRON_TRASH=gio
 
-    export VISUAL='code'
+    export VISUAL='code --wait -n'
 
     function reload_quotes {
         strfile -s -c % ~/Documents/quotes ~/Documents/quotes.dat;
@@ -173,16 +115,28 @@ then
         print ul.quote(sys.argv[1])"'
 
     function sendJob {
+        if [[ -z "$1" ]]
+        then
+            read unencoded_id
+        else
+            unencoded_id="$1"
+        fi
+
         if [[ -z "$2" ]]
         then
             TYPE='OPORDR'
         else
             TYPE="$2"
         fi
-        record_id=$(urlencode "$1")
+        record_id=$(urlencode "$unencoded_id")
         parent_id=$(urlencode "$4")
         echo $record_id
        curl --verbose  "http://localhost:8000/gateway/order_changes?id=DTR&file=$TYPE&record_id=$record_id&drv1=$driver&ver=4&drv2=none";
     }
 
+    alias sj="sendJob"
+<<<<<<< HEAD
+
+=======
+>>>>>>> c68b7ffd3... 5/25/2019
 fi
