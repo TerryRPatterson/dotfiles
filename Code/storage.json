@@ -1,9 +1,13 @@
 {
     "telemetry.machineId": "ecd7a968f8c016c81b4b61a3e8c70d1a652729ac357a00e7d2afdf5fa794a07e",
     "openedPathsList": {
-        "workspaces3": [],
+        "workspaces3": [
+            "file:///home/tpatterson/dtr-code/dtrweb",
+            "file:///home/tpatterson/.dotfiles"
+        ],
         "files2": [
-            "file:///home/tpatterson/.dotfiles/.bashrc"
+            "file:///home/tpatterson/.dotfiles/.bashrc",
+            "file:///home/tpatterson/.dotfiles/prompt.sh"
         ]
     },
     "lastKnownMenubarData": {
@@ -46,6 +50,31 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/tpatterson/dtr-code/dtrweb",
+                                        "path": "/home/tpatterson/dtr-code/dtrweb",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dtr-code/dtrweb"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/tpatterson/.dotfiles",
+                                        "path": "/home/tpatterson/.dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
@@ -55,6 +84,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.dotfiles/.bashrc"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/tpatterson/.dotfiles/prompt.sh",
+                                        "path": "/home/tpatterson/.dotfiles/prompt.sh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/prompt.sh"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -114,6 +154,10 @@
                                 {
                                     "id": "workbench.action.openSettings",
                                     "label": "&&Settings"
+                                },
+                                {
+                                    "id": "settings.filterByOnline",
+                                    "label": "&&Online Services Settings"
                                 },
                                 {
                                     "id": "workbench.view.extensions",
@@ -334,46 +378,51 @@
                             "items": [
                                 {
                                     "id": "workbench.action.toggleFullScreen",
-                                    "label": "Toggle &&Full Screen"
+                                    "label": "&&Full Screen"
                                 },
                                 {
                                     "id": "workbench.action.toggleZenMode",
-                                    "label": "Toggle Zen Mode"
+                                    "label": "Zen Mode"
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "Toggle Centered Layout"
-                                },
-                                {
-                                    "id": "workbench.action.toggleMenuBar",
-                                    "label": "Toggle Menu &&Bar"
+                                    "label": "Centered Layout"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.action.toggleMenuBar",
+                                    "label": "Show Menu &&Bar"
+                                },
+                                {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Toggle Side Bar"
+                                    "label": "Show &&Side Bar"
+                                },
+                                {
+                                    "id": "workbench.action.toggleStatusbarVisibility",
+                                    "label": "Show S&&tatus Bar",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.toggleActivityBarVisibility",
+                                    "label": "Show &&Activity Bar",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.togglePanel",
+                                    "label": "Show &&Panel"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarPosition",
                                     "label": "&&Move Side Bar Right"
                                 },
                                 {
-                                    "id": "workbench.action.toggleStatusbarVisibility",
-                                    "label": "&&Hide Status Bar"
-                                },
-                                {
                                     "id": "workbench.action.togglePanelPosition",
-                                    "label": "Toggle Panel Position"
-                                },
-                                {
-                                    "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "Hide &&Activity Bar"
-                                },
-                                {
-                                    "id": "workbench.action.togglePanel",
-                                    "label": "Toggle &&Panel"
+                                    "label": "Move Panel Right"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -510,21 +559,22 @@
                     },
                     {
                         "id": "editor.action.toggleMinimap",
-                        "label": "Toggle &&Minimap"
+                        "label": "Show &&Minimap"
+                    },
+                    {
+                        "id": "breadcrumbs.toggle",
+                        "label": "Show &&Breadcrumbs",
+                        "checked": true
                     },
                     {
                         "id": "editor.action.toggleRenderWhitespace",
-                        "label": "Toggle &&Render Whitespace",
+                        "label": "&&Render Whitespace",
                         "checked": true
                     },
                     {
                         "id": "editor.action.toggleRenderControlCharacter",
-                        "label": "Toggle &&Control Characters",
+                        "label": "Render &&Control Characters",
                         "checked": true
-                    },
-                    {
-                        "id": "breadcrumbs.toggle",
-                        "label": "Toggle &&Breadcrumbs"
                     }
                 ]
             },
@@ -982,7 +1032,6 @@
             },
             "workbench.action.openSettings": {
                 "label": "Ctrl+,",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+,"
             },
             "workbench.view.extensions": {
@@ -1055,7 +1104,6 @@
             },
             "editor.action.commentLine": {
                 "label": "Ctrl+/",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+/"
             },
             "editor.action.blockComment": {
@@ -1137,12 +1185,10 @@
             },
             "workbench.action.zoomIn": {
                 "label": "Ctrl+=",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+="
             },
             "workbench.action.zoomOut": {
                 "label": "Ctrl+-",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+-"
             },
             "workbench.action.zoomReset": {
@@ -1163,8 +1209,9 @@
                 "userSettingsLabel": "ctrl+shift+f"
             },
             "workbench.view.scm": {
-                "label": "Ctrl+Shift+G",
-                "userSettingsLabel": "ctrl+shift+g"
+                "label": "Ctrl+Shift+G G",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+shift+g g"
             },
             "workbench.view.debug": {
                 "label": "Ctrl+Shift+D",
@@ -1181,7 +1228,6 @@
             },
             "workbench.action.terminal.toggleTerminal": {
                 "label": "Ctrl+`",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+`"
             },
             "workbench.actions.view.problems": {
@@ -1194,12 +1240,10 @@
             },
             "workbench.action.navigateBack": {
                 "label": "Ctrl+Alt+-",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+alt+-"
             },
             "workbench.action.navigateForward": {
                 "label": "Ctrl+Shift+-",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+-"
             },
             "workbench.action.navigateToLastEditLocation": {
@@ -1285,7 +1329,6 @@
             },
             "editor.action.jumpToBracket": {
                 "label": "Ctrl+Shift+\\",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+\\"
             },
             "editor.action.marker.nextInFiles": {
@@ -1346,13 +1389,11 @@
             },
             "workbench.action.terminal.new": {
                 "label": "Ctrl+Shift+`",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+`"
             },
             "workbench.action.terminal.split": {
-                "label": "Ctrl+\\",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+\\"
+                "label": "Ctrl+Shift+5",
+                "userSettingsLabel": "ctrl+shift+5"
             },
             "workbench.action.tasks.build": {
                 "label": "Ctrl+Shift+B",
@@ -1370,5 +1411,19 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#282c34"
+    "themeBackground": "#282c34",
+    "pickerWorkingDir": "/home/tpatterson",
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/tpatterson/.config/Code/Backups/1569500715780",
+            "uiState": {
+                "mode": 1,
+                "x": 2660,
+                "y": 29,
+                "width": 856,
+                "height": 1047
+            }
+        },
+        "openedWindows": []
+    }
 }

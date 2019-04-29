@@ -21,16 +21,13 @@ then
 
     eval $(thefuck --alias)
 
-
-
-
     # check_source $HOME/.dotfiles/z.sh
     check_source $HOME/.dotfiles/sensible.bash
     check_source $HOME/.dotfiles/.gitPrompt
     check_source $HOME/.qfc/bin/qfc.sh
     check_source /usr/share/fzf/shell/key-bindings.bash
     check_source $HOME/.dotfiles/secureKeys
-    
+
 
     eval $(thefuck --alias darn)
 
