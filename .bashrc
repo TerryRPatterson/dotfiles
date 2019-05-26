@@ -135,8 +135,4 @@ then
     }
 
     alias sj="sendJob"
-<<<<<<< HEAD
-
-=======
->>>>>>> c68b7ffd3... 5/25/2019
 fi
