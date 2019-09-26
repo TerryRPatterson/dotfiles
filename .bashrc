@@ -9,6 +9,13 @@ function check_source {
         fi
     }
 
+function source_possible {
+    if [ -f $1 ]
+    then
+        source $1
+    fi
+}
+
 # Source global definitions
 check_source /etc/bashrc
 
@@ -26,7 +33,8 @@ then
     check_source $HOME/.dotfiles/.gitPrompt
     check_source $HOME/.qfc/bin/qfc.sh
     check_source /usr/share/fzf/shell/key-bindings.bash
-    check_source $HOME/.dotfiles/secureKeys
+    source_possible $HOME/.dotfiles/secureKeys
+    check_source ~/dtr-code/dev-tools/env/dtr_dev.bash
 
 
     eval $(thefuck --alias darn)
@@ -132,4 +140,21 @@ then
     }
 
     alias sj="sendJob"
+
+
+    code_wrk ()
+    {
+        if wrk "$@"; then
+            local workspaceFile="$SRC/.vscode/$WRK_ENV.code-workspace";
+            if [[ -f $workspaceFile ]]; then
+                code -n $workspaceFile;
+            else
+                code -n $SRC;
+            fi;
+        else
+            return 1;
+        fi
+    }
+
+    complete -F _cmpl_wrk code_wrk
 fi
