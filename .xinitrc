@@ -36,3 +36,4 @@ fi
 # then
 #     xrdb $HOME/.Xresources
 # fi
+export TERMINAL="kitty";

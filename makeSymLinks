@@ -16,3 +16,5 @@ link_to_home quotes Documents;
 link_to_home .vscode;
 
 link_to_home Code .config;
+
+link_to_home .xinitrc;

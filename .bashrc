@@ -1,9 +1,9 @@
 # .bashrc
 
 function check_source {
-        if [ -f $1 ]
+        if [[ -s $1 ]]
         then
-            source $1
+            source "${1}" "";
         else
             echo missing $1
         fi
@@ -20,11 +20,13 @@ function source_possible {
 check_source /etc/bashrc
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$HOME/activityReader/dev_tools:$PATH"
+
+check_source $HOME/programming_projects/work/wrk  
 
 # customazations for interactive sessions
-if [ -t 1 ]
+if [[ -t 1 ]]
 then
+    source <(kitty + complete setup bash)
 
     eval $(thefuck --alias)
 
@@ -34,8 +36,10 @@ then
     check_source $HOME/.qfc/bin/qfc.sh
     check_source /usr/share/fzf/shell/key-bindings.bash
     source_possible $HOME/.dotfiles/secureKeys
-    check_source ~/dtr-code/dev-tools/env/dtr_dev.bash
+    source_possible ~/dtr-code/dev-tools/env/dtr_dev.bash
 
+    check_source $HOME/.nvs/nvs.sh
+    
 
     eval $(thefuck --alias darn)
 
@@ -78,6 +82,8 @@ then
     export ELECTRON_TRASH=gio
 
     export VISUAL='code --wait -n'
+    export EDITOR=$VISUAL
+    export NVS_HOME="$HOME/.nvs"
 
     function reload_quotes {
         strfile -s -c % ~/Documents/quotes ~/Documents/quotes.dat;
@@ -93,7 +99,7 @@ then
     fi
 
     function server {
-        python -m SimpleHTTPServer $1;
+        python -m SimpleHTTPServer "$@";
     }
 
     function mkcd {

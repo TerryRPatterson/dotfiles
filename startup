@@ -1,1 +1,2 @@
 xhost +local:localhost
+export TERMINAL=kitty
