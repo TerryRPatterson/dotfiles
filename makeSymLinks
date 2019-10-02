@@ -14,4 +14,4 @@ link_to_home .lessfilter;
 link_to_home quotes Documents/;
 
 link_to_home .xinitrc;
-link_to_home kitty .config/kitty;
+link_to_home kitty/ .config/kitty;

@@ -13,6 +13,8 @@ function source_possible {
     if [ -f $1 ]
     then
         source $1
+    else
+        MISSING="$MISSING $1";
     fi
 }
 
@@ -21,7 +23,7 @@ check_source /etc/bashrc
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-check_source $HOME/programming_projects/work/wrk  
+source_possible $HOME/programming_projects/work/wrk  
 
 # customazations for interactive sessions
 if [[ -t 1 ]]
@@ -36,7 +38,7 @@ then
     check_source $HOME/.qfc/bin/qfc.sh
     check_source /usr/share/fzf/shell/key-bindings.bash
     source_possible $HOME/.dotfiles/secureKeys
-    source_possible ~/dtr-code/dev-tools/env/dtr_dev.bash
+    source_possible $HOME/dtr-code/dev-tools/env/dtr_dev.bash
 
     check_source $HOME/.nvs/nvs.sh
     
